@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "random.h": "c",
+        "irqnr.h": "c",
+        "ioctl.h": "c",
+        "types.h": "c",
+        "fs.h": "c",
+        "kernel.h": "c"
+    }
+}
