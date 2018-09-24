@@ -3,6 +3,10 @@
 #include<fcntl.h>   // Required for O_RDONLY
 #include <unistd.h> // Required for read
 
+void random_number(void* ptr_n, int fd) {
+    read(fd, ptr_n, sizeof(ptr_n));
+}
+
 int main(){
     int fd;
     printf("Starting device test code example...\n");
@@ -13,7 +17,8 @@ int main(){
     }
 
     int n;
-    read(fd, &n, sizeof(int));
+    random_number(&n, fd);
+    
     printf("Random number generated: %d\n", n);
 
     printf("End of the program\n");
