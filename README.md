@@ -8,3 +8,7 @@ CAN BE CALLED BY USER SPACE CODE WHEN USE: open("/dev/randomness_generator", O_R
 4.  Run user space code: sudo ./main
 5.  Remove kernel module: sudo rmmod kernel_module
 6.  Remove created files: make clean
+
+TODO LIST
+1. Mutex
+2. ...

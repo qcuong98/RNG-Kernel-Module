@@ -15,6 +15,7 @@ int main(){
         perror("Failed to open the device...");
         return errno;
     }
+    
 
     int n;
     random_number(&n, fd);
